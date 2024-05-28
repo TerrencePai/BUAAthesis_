@@ -1,0 +1,21 @@
+% !Mode:: "TeX:UTF-8"
+\ifdefined\maindoc
+\else
+  \documentclass[master,openright,twoside,color,AutoFakeBold=true]{misc/buaathesis}
+  \addbibresource{reference_thesis.bib}
+  \begin{document}
+  % 正文页码样式
+  \mainmatter
+  % 正文页眉页脚样式 
+  \pagestyle{mainmatter}
+\fi
+
+\chapter{模板代码实现}
+多个引用\cite{idlemem,sigsegv,ulk3rd,ldd3rd,GMM,nrd,1992GMM}. 
+上角引用\upcite{idlemem,sigsegv,ulk3rd,ldd3rd,GMM,nrd,1992GMM}
+
+\ifdefined\maindoc
+\else
+  \input{subtex/common/reference}
+  \end{document}
+\fi

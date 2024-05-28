@@ -1,0 +1,10 @@
+% !Mode:: "TeX:UTF-8"
+% https://blog.csdn.net/X_And_Y/article/details/104867559
+% 实际发现出来的作者名都大写了，这是因为bibtex样式文件的标准规定如此 
+% 解决方法：修改biblatex的gbnamefmt=lowercase参数 https://github.com/sikouhjw/gdutthesis/discussions/66
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{参考文献}
+% \nocite{*}
+\printbibliography[title=参\ 考\ 文\ 献] % biblatex 方式
+\cleardoublepage

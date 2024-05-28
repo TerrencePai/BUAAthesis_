@@ -1,0 +1,27 @@
+% !Mode:: "TeX:UTF-8"
+\ifdefined\maindoc
+\else
+  \documentclass[master,openright,twoside,color,AutoFakeBold=true]{misc/buaathesis}
+  \begin{document}
+\fi
+
+
+\frontmatter
+% 前言页眉页脚样式
+\pagestyle{frontmatter}
+
+% 中英文摘要
+\begin{cabstract}
+  中文摘要内容包括：“摘要”字样，摘要正文，关键词。对于中英文摘要，都必须在摘要的最下方另起一行，用显著的字符注明本文的关键词，格式见附件13。
+  摘要是学位论文内容的简短陈述，应体现论文工作的核心思想。论文摘要应力求语言精练准确，博士学位论文的中文摘要一般约800～1200字；硕士学位论文的中文摘要一般约500字。摘要内容应涉及本项科研工作的目的和意义、研究思想和方法、研究成果和结论，博士学位论文必须突出论文的创造性成果，硕士学位论文必须突出论文的新见解。
+  关键词：是为用户查找文献，从文中选取出来用来揭示全文主题内容的一组词语或术语，应尽量采用词表中的规范词（参照相应的技术术语标准）。关键词一般为3～5个，按词条的外延层次排列（外延大的排在前面）。关键词之间用逗号分开，最后一个关键词后不打标点符号。  
+\end{cabstract}
+
+\begin{eabstract}
+  英文摘要：为了国际交流的需要，论文须有英文摘要。英文摘要的内容及关键词应与中文摘要及关键词一致，要符合英语语法，语句通顺，文字流畅。英文和汉语拼音一律为Times New Roman体，字号与中文摘要相同，格式见附件14。
+\end{eabstract}
+
+\ifdefined\maindoc
+\else
+  \end{document}
+\fi

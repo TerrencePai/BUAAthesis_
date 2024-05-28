@@ -1,0 +1,62 @@
+
+% !Mode:: "TeX:UTF-8"
+\def\maindoc{}
+\documentclass[master,openright,twoside,color,AutoFakeBold=true]{misc/buaathesis}%
+\addbibresource{reference_thesis.bib} % biblatex 方式添加参考文献源，可以添加多个文件，逗号分隔
+% % 参考文献输出方式，numerical 为按照出现顺序，authoryear 为按照作者姓名和年份
+% \citestyle{template_file/numerical}
+% \citestyle{authoryear}
+
+
+\begin{document}
+
+% 用户信息
+\include{subtex/common/com_info}
+\include{subtex/master/master_info}
+
+% 中英封面、提名页、授权书
+\maketitle
+% 摘要
+\include{subtex/abstract}
+% 目录、插图目录、表格目录
+\tableofcontents
+\listoffigures
+\listoftables
+% 符号表
+\include{subtex/master/denotation}
+
+% 正文页码样式
+\mainmatter
+% 正文页眉页脚样式
+\pagestyle{mainmatter}
+
+% 正文
+\include{subtex/chapter1-intro}
+上角引用\upcite{idlemem,sigsegv,ulk3rd,ldd3rd,GMM,nrd,1992GMM}
+\include{subtex/chapter2-config}
+\include{subtex/chapter3-download}
+\include{subtex/chapter4-basic}
+\include{subtex/chapter5-usage}
+\include{subtex/chapter6-implement}
+\include{subtex/conclusion}
+
+% 参考文献
+\include{subtex/common/reference}
+
+% 附录
+\appendix
+\include{subtex/appendix/appendix1-faq}
+\include{subtex/appendix/appendix2-contactus}
+
+% 附页标题样式
+\backmatter
+
+% 附页
+\include{subtex/master/back1-achievement}
+\include{subtex/master/back2-acknowledgement}
+\include{subtex/master/back3-aboutauthor}
+\end{document}
+
+
+
+\begin{document}

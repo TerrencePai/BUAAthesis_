@@ -1,0 +1,610 @@
+
+%更新历史仅给出更新针对的问题，相应的处理代码和解释不在此给出，详见提示对应的说明文档内容
+
+%\updateinfo[latest]{date of update: }\label{up:latest}
+
+\updateinfo[2023-09-10]{date of update: 2023-09-10 to version v1.1o}\label{up:20230910}
+\begin{enumerate}
+
+\item 增加了文献题目与文献标识符之间的标点titletypedelim。(20230527)
+
+add a punctuation titletypedelim between title and type identifier.
+
+\item 增加用于控制顺序编码样式引用标注标签压缩文献数量的计数器gbrefcompress。(20230618)
+
+add a counter gbrefcompress to set the number of references compressed in the numeric citation label.
+
+\item 增加姓名格式控制选项值gbnamefmt=fullname。(202302626)
+
+add an option gbnamefmt=fullname for name format control.
+
+
+\end{enumerate}
+
+
+\updateinfo[2023-05-24]{date of update: 2023-05-24 to version v1.1n}\label{up:20230524}
+\begin{enumerate}
+
+\item 完善了chinese-jmw样式。(20230425)
+
+improve the style chinese-jmw.
+
+\item 增加了gbcitelabel的选项值。(20230524)
+
+add option value for gbcitelabel option.
+
+
+\item 增加了gbalign的选项值。(20230524)
+
+add option value for gbalign option.
+
+\end{enumerate}
+
+
+\updateinfo[2023-04-24]{date of update: 2023-04-24 to version v1.1m}\label{up:20230424}
+\begin{enumerate}
+
+\item 完善了chinese-css样式。(20230410)
+
+improve the style chinese-css.
+
+\item 增加了chinese-jmw样式。(20230424)
+
+add the style chinese-jmw.
+
+\end{enumerate}
+
+\updateinfo[2023-03-31]{date of update: 2023-03-31 to version v1.1l}\label{up:20230331}
+\begin{enumerate}
+
+\item 增加命令addEntryField用于手动的为指定条目添加域。(20230331)
+
+add cmd addEntryField to add filed for specific entries.
+
+
+\item 增加了关于多音字排序调整的说明。(20230331)
+
+add instruction of sorting adjustment for multi-pinyin.
+
+
+\item 增加了中国社会科学期刊的样式。(20230331)
+
+add style for society sciences in China.
+
+\item 增加了对eventtitle的支持。(20230331)
+
+add support for eventtitle.
+
+\end{enumerate}
+
+
+\updateinfo[2022-11-07]{date of update: 2022-11-07 to version v1.1k}\label{up:20221107}
+\begin{enumerate}
+
+
+\item 修改文献表段落格式(缩进)的控制接口，使其统一。(20221107)
+
+modify control interface of the bibliography's indents to make it uniform for different styles.
+
+\item 完善文档关于文献表段落格式控制的说明。(20221107)
+
+refine instruction of the bibliography's paragraph control in the doc.
+
+\end{enumerate}
+
+
+\updateinfo[2022-08-29]{date of update: 2022-08-29 to version v1.1j}\label{up:20220829}
+\begin{enumerate}
+
+\item 修复期刊名不存在时标点多余的问题。(20220527)
+
+fix the bug of duplicated punctuation when journal is absent.
+
+\item 增加控制斜杠的字体的命令SlashFont。(20220625)
+
+add a cmd SlashFont to control the font of slash。
+
+
+\item 增加BracketLift尺寸并修改bibleftparen、gbleftparen等命令提高方括号、圆括号的竖直位置。(20220625)
+
+add length BracketLift to raise vertical position of bracket and parenthesis by modifying the cmds such as bibleftparen, gbleftparen, and so on。
+
+
+\item 增加一个数字域refnumber，用以定制文献的序号数字。(20220625)
+
+add a integer field refnumber to be used as the labelnumber
+
+\item 增加一个选项gbfootbibfmt单单实现脚注文献表中相同文献用标签替代的功能。(20220829)
+
+add an option gbfootbibfmt to implement the label substitution of the same reference in footnote bibliography.
+
+\end{enumerate}
+
+
+
+\updateinfo[2022-05-17]{date of update: 2022-05-17 to version v1.1i}\label{up:20220517}
+\begin{enumerate}
+
+\item 修改name:andothers宏去除两重中文标点的错误。(20220417)
+
+correct macro name:andothers to remove the bug of duplicate cjkcomma.
+
+\item 修订说明文档。(20220511)
+
+refine the doc.
+
+\item 修改erj，ccnu中的标点命名。(20220511)
+
+modify the denomination of punctuation in erj, ccnu styles.
+
+\end{enumerate}
+
+\updateinfo[2022-04-16]{date of update: 2022-04-16 to version v1.1h}\label{up:20220416}
+\begin{enumerate}
+
+\item 在文献表打印前增加hyphenpenalty等命令避免行溢出。(20220416)
+
+add cmds like hyphenpenalty at begin of bibliography to remove Overfull hbox
+
+\item 修改title宏使book类可以输出卷信息。(20220416)
+
+modify the title macro to output volume for book
+
+\item 在文献类型和载体标识前加入allowbreak使更好的断行。(20220416)
+
+add allowbreak before type flag to make linebreak better
+
+\item 修改部分说明文档内容。(20220416)
+
+refine the manual doc
+
+\end{enumerate}
+
+
+\updateinfo[2022-04-03]{date of update: 2022-04-03 to version v1.1g}\label{up:20220403}
+\begin{enumerate}
+
+\item 修正由makecapital的逻辑修改导致的数学公式标识符被吃的问题。(20220403)
+
+correct a bug caused by case changing
+
+\item 去除了一些warning (20220403)
+
+remove some warnings
+
+
+\end{enumerate}
+
+
+
+\updateinfo[2022-03-13]{date of update: 2022-03-13 to version v1.1f}\label{up:20220313}
+\begin{enumerate}
+
+\item 修正edition格式。(20220309)
+
+correct format of edition
+
+\item 设置usetranslator选项为true (20220309)
+
+set usetranslator to true
+
+\item 加入CCNU，NWAFU，SEU的样式 (20220312)
+
+add styles for CCNU,NWAFU,SEU
+
+\end{enumerate}
+
+
+
+\updateinfo[2022-03-07]{date of update: 2022-03-07 to version v1.1e}\label{up:20220307}
+\begin{enumerate}
+
+\item 修正gbcitecomp选项。(20220307)
+
+correct option gbcitecomp
+
+\item 过滤数据版本为1的情况。(20220307)
+
+filter the case of 1st edition
+
+\end{enumerate}
+
+
+\updateinfo[2022-02-22]{date of update: 2022-02-22 to version v1.1d}\label{up:20220222}
+\begin{enumerate}
+
+\item 更新chinese-erj到1.0a版本。(20220222)
+
+update chinese-erj to 1.0a.
+
+\item 增加gbcitecomp选项控制顺序编码制标注标签是否压缩。(20220212)
+
+add option gbcitecomp to control the citation compression for numeric style.
+
+\end{enumerate}
+
+
+
+\updateinfo[2022-01-24]{date of update: 2022-01-24 to version v1.1c}\label{up:20220124}
+\begin{enumerate}
+
+\item 增加refname、bibname定义避免subbibintoc出错。(20220115)
+
+add definition of refname and bibname to move the error of using subbibintoc.
+
+\item 使用entrysubtype来标记报纸和标准类型。(20220124)
+
+use field entrysubtype to identify entry type newspaper and standard.
+
+\end{enumerate}
+
+
+\updateinfo[2021-12-11]{date of update: 2021-12-11 to version v1.1b}\label{up:20211211}
+
+\begin{enumerate}
+
+\item 修改GB7714-2005版的专利题目输出增加国别信息。(20211211)
+
+modify the patent title macro to add country info for GB7714-2005
+
+\item 增加languageid域便于记录文献的语种。 （20211010）
+
+add languageid field to save the language of the reference for convenience.
+
+\item 修正由姓名域格式宏中的由命令顺序（sentencecase）产生的bug。 （20211019）
+
+correct a bug in name format macro which caused by the sequence of cmd
+s.
+
+\item 增加标注标签的包围符号选项（gbcitelabel）。 （20211030）
+
+add an option gbcitelabel to control the enclosure symbol of citation label.
+
+\end{enumerate}
+
+
+\updateinfo[2021-09-11]{date of update: 2021-09-11 to version v1.1a}\label{up:20210911}
+
+\begin{enumerate}
+\item 修改作者姓名中的部分标点机制。 （20210911）
+
+modify the mechanism for part of the punctuation in author names.
+
+\item 修改作者姓名中中文拼音格式的机制。（20210911）
+
+modify the mechanism for format of Chinese Pinyin in author names.
+
+\end{enumerate}
+
+
+
+\updateinfo[2021-08-19]{date of update: 2021-08-19 to version v1.0z}\label{up:20210819}
+
+\begin{enumerate}
+\item 增加GB/T 7714-2005，GB/T 7714-1987样式。 （20210516）
+
+add styles for standards: GB/T 7714-2005, GB/T 7714-1987.
+
+\item 修改顺序编码制cite/supercite多篇文献同一处引用的标签内部的标点为逗号。（2021-0530）
+
+modify the delim in cite/supercite of multi-ref citation for numeric style to a comma.
+
+\item 增加出版项中出版地和出版者之间的标点：publocpunct。（20210819）
+
+add a punctuation between address and publisher: publocpunct.
+
+
+\end{enumerate}
+
+
+\updateinfo[2021-05-06]{date of update: 2021-05-06 to version v1.0y}\label{up:20210506}
+
+\begin{enumerate}
+\item 修改顺序编码制parencite命令使保留引用标签后面空格。 （20210412）
+
+modify the parencite to retain the space after the citation label for numeric bibliography.
+
+
+\item 增加gbalign选项值gb7714-2015ay，并修改器实现，使其可以在不同样式下生成数字标签和非数字标签文献表。 （20210411）
+
+add value gb7714-2015 for option gbalign and modify its implementation to generate numeric or none-numeric bibliography for different styles.
+
+\item 为兼容性考虑，对gb7714-2015样式增加mergedate样式但没有实际作用，如果要使用mergedate 的效果可以使用bibstyle=gb7714-2015ay，因为现在ay样式也能实现顺序编码的文献表。（20210415）
+
+add mergedate option for gb7714-2015 with none actual effect, if want to obtain the use of mergedate, one can use bibstyle=gb7714-2015ay, because ay style also has the numeric bibliography now.
+
+\item 为方便使用，增加对标点 multiciterangedelim 的兼容，因为 biblatex v3.15 增加了一些标点并更新了一些宏，尽管以前的旧版本的宏也能用。（20210421）
+
+add support of multiciterangedelim for convenience of use, because biblatex v3.15 add some new delim and updated some macros, although the old version macro still works.
+
+\item 增加对abstract、howpublished域的特殊字符处理。（20210506）
+
+add special chars treatment for abstract and howpublished field.
+
+\end{enumerate}
+
+\updateinfo[2021-04-03]{date of update: 2021-04-03 to version v1.0x}\label{up:20210403}
+
+\begin{enumerate}
+
+\item 受biblatex-ext启发，增加citexref选项，来实现传统的crossref功能。（20210216）
+
+add an option citexref to implement the traditional crossref feature inspired by biblatex-ext.
+
+
+\item 为作者年份制增加一个著录表环境(numerical)使其可以输出带数字标签的文献表。（20210311）
+
+add a bibliography environment (numerical) to print number labeled bibliography for author-year style.
+
+
+\item 为gbnamefmt选项增加一个选项值quanpin，其效果为Liu Qiangda。（20210321）
+
+add a value for option gbnamefmt, the result of setting this value is like:Liu Qiangda.
+
+
+\item 完善译著中除中文外其它语言的译者的输出。（20210401）
+
+improve the translator output of languages other than Chinese for tranlations.
+
+\item 去除中文行内上标标注后面因xeCJK自动添加的空白。（20210401）
+
+remove the space after the superscript citation in chinese line automatically added by xeCJK.
+\end{enumerate}
+
+
+
+\updateinfo[2021-01-19]{date of update: 2021-01-19 to version v1.0w}\label{up:20210119}
+
+\begin{enumerate}
+
+\item 修订说明文档，并更新清华学位论文示例。（20200802）
+
+revise the doc, update the example of thuthesis.
+
+\item 修改目录结构，增加pdf比较的脚本。（20210104）
+
+change the dir structrue, add a script for pdf-diff.
+
+\item 著录格式中在//之前增加一个allowbreak。（20210104）
+
+add a allowbreak before // for bib-styles.
+
+\item 著者-年份制增加了一个gblabelref选项用于控制标签中作者的超链接。（20210119）
+
+add an option for author-year style to control the hyperlink of the author label in citation.
+
+
+\end{enumerate}
+
+
+
+\updateinfo[2020-07-21]{date of update: 2020-07-21 to version v1.0v}\label{up:20200721}
+
+\begin{enumerate}
+
+\item 在两种样式下重定义citet命令，使其能正确处理相同作者压缩的情况。（20200721）
+
+redefine citet command for two styles to deal compression of the same author cases.
+
+\item 在gb7714-2015的样式中增加gblocal选项的支持。（20200627）
+
+add support for gblocal option in numerical style gb7714-2015.
+
+\item 设置顺序编码从连续2篇文献开始压缩。（20200704）
+
+set numerical compression starting from the case of continuous 2 references.
+\end{enumerate}
+
+%============================
+\updateinfo[2020-03-20]{date of update: 2020-03-20 to version v1.0u}\label{up:2020320}
+
+\begin{enumerate}
+
+\item 在gb7714-2015ay的标注样式中增加nameyeardelim定义，避免与gb7714-2015著录样式混用时出错。（20200320）
+
+add definition of nameyeardelim in gb7714-2015ay.cbx to avoid errors when using with gb7714-2015.bbx.
+
+\item 增加尺寸biblabelextend，扩展list类文献表环境的标签宽度，以解决某些字体下自动计算的标签宽度不够的问题。（20200319）
+
+add a length biblabelextend to extend the label width of list-like bibliography environment to solve the problem that the automatic computed width of bib label is not enough for some fonts.
+
+\item 修改aritcle驱动，避免url=false时输出修改或更新日期。（20200316）
+
+modify the article driver to avoid to output the modified date when url=false
+
+\item 调整排序模板使得key域能够兼容拼音，因为在中文环境中key域其实没有更多的作用。（20200312）
+
+redefine sorting template for the Pinyin compatibility in key field, because the key field has no more functions in Chinese environment.
+
+\item 调整语言判断逻辑，避免出现中日文字符混合的日文文献判断成中文的错误。（20200312）
+
+adjust the logic of language judgement，to avoid the error that the Japanese reference with mixed characters of Japanese and Chinese to be judged as Chinese.
+
+\end{enumerate}
+
+%============================
+\updateinfo[2020-03-04]{date of update: 2020-03-04 to version v1.0t}\label{up:2020304}
+
+\begin{enumerate}
+
+\item 增加了对外经贸大学的参考文献示例。（20200228）
+
+add a bibliography example for UIBE.
+
+\item 增加了gbmedium选项。（20191126）
+
+add an option gbmedium.
+
+\item 进一步完善了本文档,完善了整个repo的完整编译流程。（20191126）
+
+further refine this manual and the complete compilation procedure of this repo.
+
+
+\item 在顺序编码样式中也增加了排序模板和gblanorder选项(2020-0225,\#59)
+
+implementation of sorttemplate and gblanorder option for numeric style.
+
+\item 修正了biblatex2.14后条目别名处理默认不新增条目类型导致newspaper出错的问题(2020-0110,\#57)
+
+correct a newspaper error raised by the mechanisim changing of default entrytype define with alias set.
+
+
+\end{enumerate}
+
+%============================
+\updateinfo[2019-08-28]{date of update: 2019-08-28 to version v1.0s}\label{up:190828}
+
+\begin{enumerate}
+
+\item 通过biblatex v3.13版本的更新，解决一个作者和一个作者加等时不利用等做歧义判断的问题。（20190828）
+
+By means of the update of biblatex v3.13，the ambiguity test between one author and one author with et al is no longer taking into count the et al.
+
+\item 直接增加citet，citep命令，不再依赖natbib模块，并完善了citetns，citepns，upcite，inlinecite等命令。（20190409）
+
+add citet and citep to remove the dependence of the natbib module, improve the commands : citetns，citepns，upcite，inlinecite.
+
+
+\item 文档中增加了排序相关内容介绍。（20190422）
+
+add contents of sorting in the document.
+
+
+\item 增加了脚注的单页计数设置选项 gbfnperpage。（20190422）
+
+add an option gbfnperpage to set the resetting mechanism of footnote counter.
+
+\item 增加了citec命令用于另一种形式的压缩，比如\textsuperscript{[2]-[4]}，以及常用引用命令的复数形式命令。（20190430）
+
+add a cmd citec to generate a new type of compression citation like \textsuperscript{[2]-[4]}, and add the plural form cmds of the common citation commands.
+
+\item 增加了gbannote选项来控制是否在文献表条目的后面输出由annotation或annote域给出的注释信息。（20190509）
+
+add an option gbannote to control the output of annotation info after an entry which was provided by field annotation or annote.
+
+\item 完善了会议论文中的volume，series等域的输出，增加了同济大学文献的示例，增加了局部调整本地化字符串的说明。（20190509）
+
+improve the output format of fields: volume, series for inproceedings entrytype, add an bibliography example of Tongji university, add an instruction of the local modification method for bibstrings.
+
+\end{enumerate}
+
+
+%============================
+\updateinfo[2019-03-28]{date of update: 2019-03-28 to version v1.0r}\label{up:190328}
+\begin{enumerate}
+
+\item 增加了gblanorder选项，用于控制作者年制文献表中不同语言分集的排序。（20190307）
+
+add an option gblanorder to sort the reference groups of different language for author year style.
+
+\item 修正了作者年制标注中姓名中的本地化字符串输出时的作者角色判断逻辑，因为标注中无法使用ifcurrentname，所以改用labelnamesource域判断。（20190307）
+
+correct the author role judgement logic in the output of bibstrings in citations for author year style, because the  test ifcurrentname can not used in citations, so change to use labelnamesource field to judge.
+
+\item 修正了文献已经给出语言域比如language={English}中非完全小写情况下，biblatex3.11及以下版本匹配不成功而导致利用lansortorder域排序出错的问题。（20190310）
+
+correct a bug of sorting using lansortorder field when a reference with field language like language={English} which is not lower case at all thus the biblatex 3.11 and lower version fail to match it.
+
+
+\item 修正了小页环境中使用国标要求的脚注文献表时，相同文献引用时的标签问题，比如小页中应是同\textcircled{\tiny a}:15-45，
+而不是正文环境中的同\textcircled{\tiny 1}:15-45（20190310）
+
+correct the footnote bibliography problem in minipage when repeatedly cite a same reference to set a label like: \textcircled{\tiny a}:15-45 rather than the \textcircled{\tiny 1}:15-45 in normal text.
+
+\item 修正了国标要求格式脚注文献表的超链接问题。由于footmisc会导致脚注的超链接失效，且与beamer 类该包也并不兼容，因此不再使用footmisc，而直接根据latex核心代码和hyperref宏包代码实现段落格式。（20190317）
+
+correct the footnote bibliographyhyperlink for gb standard. because of the invalid hyperlink and the incompatibility with beamer by loading package footmisc, using the code of latex core  and hyperref package instead of footmisc to realize the par shape format.
+
+\item 修正了minipage中脚注悬挂对齐的问题，通过重定义\verb|\@mpfootnotetext|和\verb|\H@@mpfootnotetext|。(20190318)
+
+correct the hang alignment of the footnotes in minipage
+
+\item 增加了gb7714-2015mx样式，可以在一个文档不同的文献节中使用不同的样式，比如某些节使用顺序编码制，而有的则使用作者年制。(20190322)
+
+add a style gb7714-2015mx which can be used to generate different style bibliographies in different refsetions, like numeric style in some refsections and authoryear style in other refsections.
+
+\item 为gbnamefmt选项增加了reverseorder选项，其格式等同family-given/given-family (20190328)
+
+add a value reverseorder for gbnamefmt option which can be used to generate a name list format same as family-given/given-family
+
+\item 应ddswhu要求增加了一个erj样式，用于经济研究期刊，初步看能满足要求，但一些细节需要进一步完善 (20190328)
+
+add a style erj at the request of ddswhu for the ERJ which can match the format demand generally, some details may be need to make improvement.
+\end{enumerate}
+
+%============================
+\updateinfo[2019-02-11]{date of update: 2019-02-11 to version v1.0q}\label{up:190211}
+\begin{enumerate}
+
+\item 增加了gbfieldtype选项，用于控制type域的输出。
+
+add an option gbfieldtype to control the output of field type。
+
+\item 为作者年制增加了mergedate=none选项，用于控制文献表中日期域的输出。
+
+add an option value mergedate=none for authoryear style to control the output of date in bibliography。
+
+\item 完善了不同姓名中本地化字符串处理逻辑，修正了之前的bug。
+
+improve the logic of local bib strings in different authors, correct a bug.
+
+\item 通过对各大学学位论文模板的测试，完善了部分细节。
+
+improve some details by test the template of several universities.
+
+\end{enumerate}
+
+%============================
+\updateinfo[2019-01-19]{date of update: 2019-01-19 to version v1.0p}\label{up:190119}
+\begin{enumerate}
+
+\item 完善了国标样式的脚注文献表。
+
+improve the bibliography in footnote to match the standard GB/T 7714-2015.
+
+\item 完善了样式和文档的细节，使更精确符合GBT7714-2015。
+
+improve the style files and document to match the Standard GB/T 7714-2015.
+
+\item 增加GBT7714-2015、GBT7714-2015eg两个文档，用于国标示例和测试示例对比，以后每次更新后可以将上述两个文档与stdGBT7714-2015、stdGBT7714-2015eg进行比较，确保更新不引入BUG。
+
+add two files GBT7714-2015、GBT7714-2015eg to compare the examples from the GB and the testfiles, these files can be used to compare with the stdGBT7714-2015、stdGBT7714-2015eg to avoid BUG after update.
+
+
+\end{enumerate}
+
+
+%============================
+\updateinfo[2018-12-22]{date of update: 2018-12-22 to version v1.0o}\label{up:181222}
+\begin{enumerate}
+
+\item 对文档的格式做了完善。
+
+improve the format of the document.
+
+\item 增加了gblocal、gbcitelocal、gbbiblocal选项。
+
+add options gblocal, gbcitelocal, gbbiblocal.
+
+
+\end{enumerate}
+
+
+
+%============================
+\updateinfo[2018-11-04]{date of update: 2018-11-04 to version v1.0n}\label{up:181104}
+\begin{enumerate}
+
+\item 对misc类型文献做调整，当misc文献带有url时，将其转换为online处理，同时misc类型驱动使用biblatex的原版，而不再使用类report格式。
+
+code for misc changed, the misc type is changed to online for the reference with field url, and the driver of misc is modified to the origin driver in standard.bbx shipped by biblatex other than the report like driver.
+
+
+\item 调整代码，适应biblatex v3.12版本后去除xstring包的情况。
+
+code modified to adapt to biblatex v3.12 without loading xstring package.
+
+
+\end{enumerate}
+
+
