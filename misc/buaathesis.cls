@@ -39,7 +39,8 @@ The LaTeX template for thesis of BUAA]
 
 %%%%%%%%%% global package %%%%%%%%%%
 % 全局通用宏包
-
+\RequirePackage[hyphens]{url}
+\RequirePackage{microtype}
 \RequirePackage{ifthen}
 \RequirePackage{multicol}
 %%%%%%%%%% font %%%%%%%%%%
@@ -371,7 +372,7 @@ The LaTeX template for thesis of BUAA]
 %用biblatex处理参考文献
 \RequirePackage[backend=biber,style=biblatex-gb7714-2015/gb7714-2015, citestyle=numeric-comp, sortcites=true, backref=false, gbalign=right, gbnamefmt=lowercase]{biblatex} 
 %\renewbibmacro{in:}{\ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}%对于article类不显示"In:"
-
+\DeclareFieldFormat{booktitle,volume}{\mkbibemph{#1}\newline}
 \DefineBibliographyStrings{english}{%
     backrefpage = {引用页},    % 单页反向引用
     backrefpages = {引用页},   % 多页反向引用
@@ -1225,7 +1226,7 @@ The LaTeX template for thesis of BUAA]
     均已在论文中作出了明确的说明。\par
     若有不实之处，本人愿意承担相关法律责任。\par
     ~~\par
-    {\zihao{5}\ 学位论文作者签名：\uline{\mbox{\hspace{7em}}}\hspace{5em}日期：\hspace{7ex}年\hspace{5ex}月\hspace{5ex}日}
+    {\zihao{5}\ 学位论文作者签名：\uline{\mbox{\hspace{7em}}}\hspace{5em}日期：\hspace{2ex}\buaa@creationanduseyear\hspace{1.5ex}年\hspace{1.5ex}\buaa@creationandusemonth\hspace{1.5ex}月\hspace{1.5ex}\buaa@creationanduseday\hspace{1.5ex}日}
     \vskip130bp
     \centerline{\zihao{3}\heiti 学位论文使用授权书}
     ~~\par
@@ -1236,8 +1237,8 @@ The LaTeX template for thesis of BUAA]
     保密学位论文在解密后的使用授权同上。\par
     ~~\par
     {\zihao{5}
-    \ 学位论文作者签名：\uline{\mbox{\hspace{7em}}}\hspace{5em}日期：\hspace{7ex}年\hspace{5ex}月\hspace{5ex}日\par
-    \ 指导教师签名：\uline{\mbox{\hspace{9em}}}\hspace{5em}日期：\hspace{7ex}年\hspace{5ex}月\hspace{5ex}日}
+    \ 学位论文作者签名：\uline{\mbox{\hspace{7em}}}\hspace{5em}日期：\hspace{2ex}\buaa@creationanduseyear\hspace{1.5ex}年\hspace{1.5ex}\buaa@creationandusemonth\hspace{1.5ex}月\hspace{1.5ex}\buaa@creationanduseday\hspace{1.5ex}日\par
+    \ 指导教师签名：\uline{\mbox{\hspace{9em}}}\hspace{5em}日期：\hspace{2ex}\buaa@creationanduseyear\hspace{1.5ex}年\hspace{1.5ex}\buaa@creationandusemonth\hspace{1.5ex}月\hspace{1.5ex}\buaa@creationanduseday\hspace{1.5ex}日}
 }
 
 %%%%%%%%%% denotation %%%%%%%%%%
@@ -1512,7 +1513,15 @@ The LaTeX template for thesis of BUAA]
     \def\buaa@awardmonth{#2}
     \def\buaa@awardday{#3}
 }
-
+% 独创性声明和使用授权时间
+\def\buaa@creationanduseyear{}
+\def\buaa@creationandusemonth{}
+\def\buaa@creationanduseday{}
+\newcommand{\creationandusedate}[3]{
+    \def\buaa@creationanduseyear{#1}
+    \def\buaa@creationandusemonth{#2}
+    \def\buaa@creationanduseday{#3}
+}
 %%%%% 'buaathesis.cls' %%%%% END
 % 孤行控制
 \widowpenalty=10000
@@ -1558,3 +1567,5 @@ The LaTeX template for thesis of BUAA]
 }
 \makeatother
 \setlength{\jot}{0pt}
+
+\RequirePackage{tabulary}
