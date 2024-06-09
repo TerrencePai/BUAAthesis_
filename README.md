@@ -6,10 +6,10 @@
 
 有两种方法：
 
-- 克隆到本地：
+- 克隆到本地（失败了可以多试几次，跟git需要翻墙有关）：
 
 ```
-git clone git@github.com:TerrencePai/BUAAthesis_.git
+git clone https://github.com/TerrencePai/BUAAthesis_.git
 ```
 
 - 直接下载压缩包到本地，同时需要注意的是：把“msmake.bat”文件的LF换行符改成CRLF换行符，VSCode或者Notepad都可以改。
