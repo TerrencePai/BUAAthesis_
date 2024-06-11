@@ -1569,3 +1569,4 @@ The LaTeX template for thesis of BUAA]
 \setlength{\jot}{0pt}
 
 \RequirePackage{tabulary}
+\floatname{algorithm}{算法}
