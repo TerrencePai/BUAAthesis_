@@ -1550,7 +1550,18 @@ The LaTeX template for thesis of BUAA]
 \makeatletter
 \newcommand\l@subsubsubsection{\@dottedtocline{4}{7.0em}{4.1em}}
 \makeatother
-% \setcounter{tocdepth}{3}    % 确保目录深度仅包含到 subsubsection
+
+\RequirePackage{bookmark}
+\setcounter{secnumdepth}{4}
+% Ensure bookmarks are aware of subsubsubsection
+\bookmarksetup{
+  level=4,
+  open
+}
+% Set up bookmark levels manually
+\makeatletter
+\def\toclevel@subsubsubsection{4}
+\makeatother
 
 \setlength{\floatsep}{10pt}      % 图与图之间的距离
 \setlength{\intextsep}{10pt} % 图在一整段文字上面时,与文字的距离
